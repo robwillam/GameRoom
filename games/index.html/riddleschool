@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Riddle School - Game Room</title>
+    <h2>Riddle School</h2>
+    <hr>
+    <br>
+    <embed src="riddleschool.swf" flashvars="" base="" quality="high" allowscriptaccess="always" allowfullscreen="true" wmode="window" width="565" height="600" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+
+    <br>
+    <a href="riddleschool.swf" download class="btn">Download</a>
+    <footer>
+        <hr>
+        <p>"escape a school lol"</p>
+        <p><strong>I DO NOT OWN THESE GAMES</strong></a>
+    </footer>
+    <script src="../../ruffle/ruffle.js"></script>
+</body>
+
+</html>
