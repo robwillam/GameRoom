@@ -1,21 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Game Room<title>
-    </head>
-    <body>
-      <h1>Game Room</h1>
-      <p>cool flash games</p>
-      <hr>
-      <h1>Games<h1>
-        <li><a href="games/riddleschool">Riddle School</a></li>
-        <hr>
-        <h1>Other<h1>
-          <li><a href="https://pigeonburger.xyz/kahoot/">Kahoot Bot Flooder</a></li>
-                    <li><a href="https://pramuwaskito.org/hacker/">Hacker Type</a></li>
-             </div>
-    <footer>
-        <hr>
-        <p>Hosting Flash Games Since 2021</p>
-      <p><strong>I DO NOT OWN THESE GAMES</strong></a>
-    </footer>
+    <title>Game Room</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q473F59QW1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-Q473F59QW1');
+   
+            <h1>
+                Game Room
+            </h1>
+        </a>
+    </div>
+    <hr>
+    <div class="search-container">
+        <input type="text" id="gameFinder" onkeyup="gameFinder()" placeholder="Search for games only" title="Type in a game">
+        <script>
+            function gameFinder() {
+                var input, filter, ul, li, a, i, txtValue;
+                input = document.getElementById("gameFinder");
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("Games");
+                li = ul.getElementsByTagName("li");
+                for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName("a")[0];
+                    txtValue = a.textContent || a.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = "";
+                    } else {
+                        li[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
+    </div>
+    <hr>
+    <div class="Games" id="Games">
+        <h2>Games</h2>
+        <ul>
+          <li><a href="games/riddleschool">Riddle School</a></li>
